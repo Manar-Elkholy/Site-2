@@ -1,0 +1,348 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+body{
+    height: 3000px;
+    perspective: 700px;
+}
+header{
+    width: 100%;
+    height: 80px;
+    overflow: auto;
+    top: 0; left: 0;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.logo{
+    width: 50px;
+    float: left;
+}
+.list1{
+    width:80%;
+    float: right;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.list1 li, .list2 li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    }
+.underline{
+    position: relative;
+    padding: 10px;
+}
+.list1 li a{
+    text-decoration: none;
+    font-size: larger;
+    color: #000000;
+}
+.underline:after{
+    content: "";
+    position: absolute;
+    width: 1px; height: 50%; left: 0; bottom: 0;
+    background-color:#000000; opacity: 0;
+    transition: 0.1s;
+    }
+    .underline:hover::after{
+        width: 1px;
+        height: 100%;
+        opacity: 1;
+    }
+    .underline:before{
+    content: "";
+    position: absolute;
+    width: 1px; height: 50%; right: 0; bottom: 0;
+    background-color:#000000; opacity: 0;
+    transition: 0.1s;
+    }
+    .underline:hover::before{
+        width: 1px;
+        height: 100%;
+        opacity: 1;
+    }
+.vl:after{
+content: "";
+position: absolute;
+width: 0; height: 2%; left: 0; bottom: 0;
+background-color:#000000; opacity: 0;
+transition: 1s;
+}
+.vl:hover::after{
+    width: 100%;
+    height: 2%;
+    opacity: 1;
+}
+.vl:before{
+content: "";
+position: absolute;
+width: 0; height: 2%; left: 0; top: 0;
+background-color:#000000; opacity: 0;
+transition: 1s;
+}
+.vl:hover::before{
+    width: 100%;
+    height: 2%;
+    opacity: 1;
+}
+.book{
+font-size: 50px;
+vertical-align: middle;
+transition: 1s;
+}
+.book:hover{
+transform: rotatey(360deg);
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+.wallpaper{
+width: 80%;
+height: 100%;
+margin: auto;
+background-image: url(../images/7a075ae77e31249f5585f38cbeb77dd0.jpg);
+background-size: cover;
+}
+.title-1{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+.one{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.title1{
+    width: 30%;
+    height: 80px;
+    margin: auto;
+    line-height: 80px;
+}
+.line{
+    width: 30%;
+    height: 2px;
+    background-color: #312d2d;
+    transform: translatey(-10px);
+    margin: auto;
+        transition: 1s;
+}
+.title1:hover .line{
+    transform: scalex(1.5);
+}
+.section1cards{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+.card1{
+    width:20%;
+    height: 90%;
+    background-color: #fff;
+    margin-left: 1%;
+}
+.book1{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 20px;
+}
+.imagetitle{
+    display: inline-block;
+    font-size: 22px;
+}
+.Next{
+    margin-left: 10px;
+    color: #fff;
+    background-color: #312d2d;
+    font-size: 22px;
+    visibility: hidden;
+}
+.card1:hover .Next{
+visibility: visible;
+}
+.two{
+    width: 100%;
+    height: 70vh;
+}
+.section2cards{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+.section2cards-card1{
+    width: 41%;
+    height: 90%;
+    background-color: navajowhite;
+    margin-left: 1%;
+    padding: 20px;
+}
+.section2cards-card2{
+    width:20%;
+    height: 90%;
+    margin-left: 1%;
+    padding: 20px;
+    transition: 1s;
+}
+.section2cards-card2:hover{
+    transform: scale(1.05,1.05);
+}
+.quoteicon{
+    font-size: 60px;
+    color: #fff;
+    display: inline;
+}
+.section2cards-card1-title{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.section2cards-card1-content1{
+    font-size: 20px;
+}
+.section2cards-card1-p{
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+.shortlines{
+    width: 35%;
+    height: 10px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+.sl-1{
+    width: 25%;
+    height: 2px;
+    background-color: #fff;
+    margin-left: 10%;
+}
+.coffee1 , .coffee2{
+    background-image: url(../images/HD-wallpaper-black-smartphone-beside-a-white-starbucks-cup.jpg);
+background-size: cover;
+background-position: center;
+}
+.coffee2{
+    background-image: url(../images/d1618ef9cfc4028ad37525932f50a6a0.jpg);
+}
+.coffee1-title , .coffee1-subtitle{
+    color: #fff;
+}
+.coffee1-title{
+    font-size: 20px;
+}
+.three{
+    width: 100%;
+    height: 20vh;
+    transform: translatey(-90px);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.animation-card1{
+    width:16% ;
+    height: 90%;
+    background-color: #fff;
+    border-right: 1px solid black;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.animation-card1-content{
+    text-align: center;
+}
+.animation-card1 i{
+    color: rgb(21, 44, 36);
+}
+.icon1{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.animation-card1-title{
+    font-size: 18px;
+}
+.animation-card1:hover .icon1{
+}
+.hrline{
+    width: 80%;
+    height: 1px;
+    background-color: #312d2d;
+    position: absolute;
+    transform: translatey(150px);
+}
+.ul-list2{
+text-align: center;
+margin: 20px 0;
+font-size: 18px;
+}
+
+.flipcards-container{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.flipcard{
+    width: 400px;
+    height: 500px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    border: 1px solid black;
+}
+.top{
+    width:100%;
+    height: 70%;
+    margin: auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.1s;
+}
+.bottom{
+    width: 100%; height: 30%;
+    padding-top: 30px;
+}
+.front, .back{
+    position: absolute;
+    width: 100%; height: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.front{
+    background-image: url(../images/sucre-depth.png);
+    z-index: 5;
+    backface-visibility: hidden;
+}
+.back{
+    background-image: url(../images/1.jpg);
+    transform: rotateY(180deg);
+    position: relative;
+}
+.flipcard:hover .top{
+    transform: rotatey(180deg);
+}
+.social-icons{
+width: 250px; height: 50px;;
+position: absolute;
+top: 50%; left: 50%;
+transform: translate(-50%,-50%);
+}
+.s-icon1 i{
+    font-size: 30px; color: #fff;
+    line-height: 50px;
+    background-color: #7c48489f;
+    width: 50px; height: 50px;
+text-align: center;}
+.product-item{
+    font-size: 22px;
+    line-height: 35px;
+}
+
